@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Roboto:wght@500&family=Sono&display=swap");
+.articles__title {
+  margin-top: 30px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 10px 0;
+  color: white;
+  background-color: pink;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  background-color: pink;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 3rem;
+  background-color: white;
+  box-shadow: 0 0 20px 0 black;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-content: flex-start;
+  flex-direction: row;
+}
+
+.logo {
+  flex-basis: 200px;
+  background-color: purple;
+}
+.logo__image {
+  width: 100%;
+  display: block;
+}
+
+.search {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search__input {
+  flex-basis: 60%;
+  height: 50%;
+  max-height: 60px;
+  margin-right: 2vh;
+  padding: 0 10px;
+  font-size: 1.4rem;
+}
+.search__input:focus {
+  box-shadow: 0 0 4px 4px pink;
+  font-weight: bold;
+}
+.search__button {
+  height: 50%;
+  font-size: 1.4rem;
+  padding: 0 10px;
+  max-height: 60px;
+  border: 2px solid black;
+  background-color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.search__button:hover {
+  background-color: black;
+  color: #fff;
+}
+
+.settings {
+  display: flex;
+  padding: 0 50px;
+  align-items: center;
+  color: gray;
+  cursor: pointer;
+}
+.settings:hover {
+  transition: 0.5s;
+  color: black;
+}
+
+.menu {
+  flex-basis: 100%;
+  background-color: rgb(65, 51, 42);
+  color: white;
+  height: 90px;
+  font-family: "Patrick Hand", cursive;
+  font-size: 3rem;
+  padding: 15px 50px 15px 80px;
+}
+.menu__list {
+  display: flex;
+  list-style: none;
+}
+.menu__list-item {
+  margin: 0 20px;
+  line-height: 6rem;
+  cursor: pointer;
+}
+.menu__list-item:hover {
+  border-bottom: 2px solid yellow;
+}
+.menu__list-item:nth-last-child(1) {
+  padding: 0 10px;
+  margin-left: auto;
+  border: 2px solid gray;
+}
+.menu__list-item:nth-last-child(1):hover {
+  border-color: yellow;
+}
+
+.articles {
+  flex-basis: 100%;
+}
+
+.footer {
+  flex-basis: 100%;
+  background-color: rgb(21, 33, 32);
+}/*# sourceMappingURL=style.css.map */

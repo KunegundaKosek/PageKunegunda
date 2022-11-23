@@ -1,8 +1,48 @@
-.articles__title {
-  margin-top: 30px;
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content__title {
+  flex-basis: 100%;
+  margin: 60px 0;
   text-align: center;
   letter-spacing: 2px;
   padding: 10px 0;
   color: white;
-  background-color: pink;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.content__article {
+  flex-basis: 40%;
+  margin: auto;
+}
+@media (max-width: 799px) {
+  .content__article {
+    flex-basis: 90%;
+  }
+}
+.content__article-img {
+  display: block;
+  width: 100%;
+}
+.content__article-title {
+  padding: 20px 30px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+.content__article-description {
+  font-size: 15px;
+  text-align: center;
+  padding: 20px 30px;
+  font-weight: 200;
+}
+.content__article-button {
+  display: block;
+  border: 2px solid black;
+  margin: 30px auto;
+  width: 50%;
+  font-size: 1.8rem;
+  padding: 6px 12px;
+  background-color: white;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
 }/*# sourceMappingURL=HomePage.css.map */

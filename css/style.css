@@ -1,11 +1,124 @@
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Roboto:wght@500&family=Sono&display=swap");
-.articles__title {
-  margin-top: 30px;
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:wght@400&family=Roboto:wght@500&family=Sono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content__title {
+  flex-basis: 100%;
+  margin: 60px 0;
   text-align: center;
   letter-spacing: 2px;
   padding: 10px 0;
   color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.content__article {
+  flex-basis: 40%;
+  margin: auto;
+}
+@media (max-width: 799px) {
+  .content__article {
+    flex-basis: 90%;
+  }
+}
+.content__article-img {
+  display: block;
+  width: 100%;
+}
+.content__article-title {
+  padding: 20px 30px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+.content__article-description {
+  font-size: 15px;
+  text-align: center;
+  padding: 20px 30px;
+  font-weight: 200;
+}
+.content__article-button {
+  display: block;
+  border: 2px solid black;
+  margin: 30px auto;
+  width: 50%;
+  font-size: 1.8rem;
+  padding: 6px 12px;
+  background-color: white;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.content {
+  display: block;
+}
+.content__project {
+  display: block;
+  text-transform: uppercase;
+  color: rgb(59, 55, 55);
+  font-size: 4rem;
+  margin: 20px;
+  font-family: "Oswald", sans-serif;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.content__js:hover {
+  transform: translateX(50px);
+  border-left: 10px solid orange;
+}
+.content__ts:hover {
+  transform: translateX(50px);
+  border-left: 10px solid rgb(39, 39, 234);
+}
+.content__css:hover {
+  transform: translateX(50px);
+  border-left: 10px solid rgb(138, 51, 65);
+}
+.content__react:hover {
+  transform: translateX(50px);
+  border-left: 10px solid rgb(222, 189, 222);
+}
+.content__boot:hover {
+  transform: translateX(50px);
+  border-left: 10px solid purple;
+}
+.content__box {
+  flex-basis: 100%;
+}
+.content__box-titleProject {
+  display: block;
+  flex-basis: 100%;
+  text-align: center;
+  font-size: 5rem;
+  font-family: "Patrick Hand", cursive;
+  margin: 30px 0;
+}
+.content__box-image {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+.content__box-description {
+  text-align: center;
+  font-family: "Arimo", sans-serif;
+  padding: 30px 50px;
+}
+.content__box-btn {
+  display: block;
+  margin: auto;
+  margin-bottom: 60px;
+  height: 50px;
+  width: 30%;
   background-color: pink;
+  border: 2px solid black;
+  font-size: 2rem;
+  font-family: "Sono", sans-serif;
+  text-align: center;
+  padding: 11px;
+  text-decoration: none;
+  color: black;
 }
 
 * {
@@ -27,7 +140,7 @@ html {
   background-color: white;
   box-shadow: 0 0 20px 0 black;
   min-height: 100vh;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   align-content: flex-start;
   flex-direction: row;
@@ -119,8 +232,13 @@ html {
   border-color: yellow;
 }
 
-.articles {
+.content {
+  display: flex;
   flex-basis: 100%;
+  background-color: rgb(246, 210, 216);
+}
+.content__title {
+  max-height: 86px;
 }
 
 .footer {

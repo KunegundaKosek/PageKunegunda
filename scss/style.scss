@@ -1,5 +1,9 @@
 @import '_variable';
 @import 'HomePage';
+@import 'ProjectPage';
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:wght@400&family=Roboto:wght@500&family=Sono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
 
 * {
     margin: 0;
@@ -25,7 +29,7 @@ html {
     box-shadow: 0 0 20px 0 black;
     min-height: 100vh;
     //pozycja
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     align-content: flex-start;
     flex-direction: row;
@@ -131,9 +135,15 @@ html {
 
 }
 
-.articles {
+.content {
+    display: flex;
     flex-basis: 100%;
-    // min-height: 100vh ;
+    background-color: rgb(246, 210, 216);
+    // min-height: 100vh;
+
+    &__title {
+        max-height: 86px;
+    }
 }
 
 .footer {

@@ -19,7 +19,7 @@ export default function () {
     const img1 = document.createElement('img');
     img1.setAttribute('class', 'content__image');
     img1.setAttribute('src', '/');
-    img1.setAttribute('alt', 'html');
+    img1.setAttribute('alt', 'html')
 
 
 }

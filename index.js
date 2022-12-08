@@ -1,12 +1,14 @@
 import CVPage from "./components/HomePage/CVPage.js";
 import HomePage from "./components/HomePage/HomePage.js";
 import SkillsPage from "./components/HomePage/SkillsPage.js";
+import JavascriptPage from "./components/ProjectPage/JavascriptPage.js";
 import ProjectPage from "./components/ProjectPage/ProjectPage.js";
 
 const content = document.querySelector('.content');
 
 // HomePage();
-SkillsPage();
+// SkillsPage();
+JavascriptPage();
 
 const homeButton = document.getElementById('homeButton');
 homeButton.addEventListener('click', () => {

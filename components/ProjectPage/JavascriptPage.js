@@ -8,7 +8,14 @@ export default function () {
     const projectButton = document.getElementById('projectButton');
     projectButton.style.color = 'crimson';
 
+    document.title = "Projekty JavaScript";
+
     ProjectPage();
+
+    const javascript = document.getElementById('javascript');
+    javascript.style.paddingLeft = "5px";
+    javascript.style.borderLeft = '10px solid orange';
+    javascript.style.fontWeight = 'bold';
 
     const title = document.querySelector('.content__title');
     title.remove();
@@ -30,7 +37,7 @@ export default function () {
     article1.appendChild(title1);
 
     const img1 = document.createElement('img');
-    img1.setAttribute('src', '../img/foto3.jpg');
+    img1.setAttribute('src', '../img/gif/gif1.gif');
     img1.setAttribute('alt', 'projekt 1');
     img1.className = 'content__box-image';
     article1.appendChild(img1);
@@ -58,7 +65,7 @@ export default function () {
     article2.appendChild(title2);
 
     const img2 = document.createElement('img');
-    img2.setAttribute('src', '../img/foto3.jpg');
+    img2.setAttribute('src', '../img/gif/gif2.gif');
     img2.setAttribute('alt', 'projekt 1');
     img2.className = 'content__box-image';
     article2.appendChild(img2);
@@ -87,7 +94,7 @@ export default function () {
     article3.appendChild(title3);
 
     const img3 = document.createElement('img');
-    img3.setAttribute('src', '../img/foto3.jpg');
+    img3.setAttribute('src', '../img/gif/gif3.gif');
     img3.setAttribute('alt', 'projekt 1');
     img3.className = 'content__box-image';
     article3.appendChild(img3);
@@ -115,7 +122,7 @@ export default function () {
     article4.appendChild(title4);
 
     const img4 = document.createElement('img');
-    img4.setAttribute('src', '../img/foto3.jpg');
+    img4.setAttribute('src', '../img/gif/gif4.gif');
     img4.setAttribute('alt', 'projekt 1');
     img4.className = 'content__box-image';
     article4.appendChild(img4);
@@ -143,7 +150,7 @@ export default function () {
     article5.appendChild(title5);
 
     const img5 = document.createElement('img');
-    img5.setAttribute('src', '../img/foto3.jpg');
+    img5.setAttribute('src', '../img/gif/gif5.gif');
     img5.setAttribute('alt', 'projekt 5');
     img5.className = 'content__box-image';
     article5.appendChild(img5);
@@ -171,7 +178,7 @@ export default function () {
     article6.appendChild(title6);
 
     const img6 = document.createElement('img');
-    img6.setAttribute('src', '../img/foto3.jpg');
+    img6.setAttribute('src', '../img/gif/gif6.gif');
     img6.setAttribute('alt', 'projekt 5');
     img6.className = 'content__box-image';
     article6.appendChild(img6);
@@ -199,7 +206,7 @@ export default function () {
     article7.appendChild(title7);
 
     const img7 = document.createElement('img');
-    img7.setAttribute('src', '../img/foto3.jpg');
+    img7.setAttribute('src', '../img/gif/gif7.gif');
     img7.setAttribute('alt', 'projekt 5');
     img7.className = 'content__box-image';
     article7.appendChild(img7);
@@ -227,7 +234,7 @@ export default function () {
     article8.appendChild(title8);
 
     const img8 = document.createElement('img');
-    img8.setAttribute('src', '../img/foto3.jpg');
+    img8.setAttribute('src', '../img/gif/gif8.gif');
     img8.setAttribute('alt', 'projekt 5');
     img8.className = 'content__box-image';
     article8.appendChild(img8);
@@ -255,7 +262,7 @@ export default function () {
     article9.appendChild(title9);
 
     const img9 = document.createElement('img');
-    img9.setAttribute('src', '../img/foto3.jpg');
+    img9.setAttribute('src', '../img/gif/gif9.gif');
     img9.setAttribute('alt', 'projekt 5');
     img9.className = 'content__box-image';
     article9.appendChild(img9);
@@ -283,7 +290,7 @@ export default function () {
     article10.appendChild(title10);
 
     const img10 = document.createElement('img');
-    img10.setAttribute('src', '../img/foto3.jpg');
+    img10.setAttribute('src', '../img/gif/gif10.gif');
     img10.setAttribute('alt', 'projekt 5');
     img10.className = 'content__box-image';
     article10.appendChild(img10);
@@ -311,7 +318,7 @@ export default function () {
     article11.appendChild(title11);
 
     const img11 = document.createElement('img');
-    img11.setAttribute('src', '../img/foto3.jpg');
+    img11.setAttribute('src', '../img/gif/gif11.gif');
     img11.setAttribute('alt', 'projekt 5');
     img11.className = 'content__box-image';
     article11.appendChild(img11);
@@ -327,4 +334,94 @@ export default function () {
     a11.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/project11.html');
     a11.className = 'content__box-btn';
     article11.appendChild(a11);
+
+    //Projekt 12
+
+    const article12 = document.createElement('article');
+    article12.className = 'content__box';
+    content.appendChild(article12);
+
+    const title12 = document.createElement('span');
+    title12.className = 'content__box-titleProject';
+    title12.textContent = 'Baner z automatycznie wymieniającymi się zdjęciami i tekstami';
+    article12.appendChild(title12);
+
+    const img12 = document.createElement('img');
+    img12.setAttribute('src', '../img/gif/gif12.gif');
+    img12.setAttribute('alt', 'projekt 5');
+    img12.className = 'content__box-image';
+    article12.appendChild(img12);
+
+    const description12 = document.createElement('p');
+    description12.className = 'content__box-description';
+    description12.textContent = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum exercitationem soluta dolorem error cumque odit praesentium ullam eos eligendi, enim voluptate assumenda delectus omnis itaque ut dolor quae. Mollitia, omnis.';
+    article12.appendChild(description12);
+
+    const a12 = document.createElement('a');
+    a12.textContent = 'Zobacz projekt';
+    a12.setAttribute('target', '_blank');
+    a12.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/project12.html');
+    a12.className = 'content__box-btn';
+    article12.appendChild(a12);
+
+    //Projekt 13
+
+    const article13 = document.createElement('article');
+    article13.className = 'content__box';
+    content.appendChild(article13);
+
+    const title13 = document.createElement('span');
+    title13.className = 'content__box-titleProject';
+    title13.textContent = 'Odliczanie czasu do jakiegoś wydarzenia';
+    article13.appendChild(title13);
+
+    const img13 = document.createElement('img');
+    img13.setAttribute('src', '../img/gif/gif13.gif');
+    img13.setAttribute('alt', 'projekt 5');
+    img13.className = 'content__box-image';
+    article13.appendChild(img13);
+
+    const description13 = document.createElement('p');
+    description13.className = 'content__box-description';
+    description13.textContent = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum exercitationem soluta dolorem error cumque odit praesentium ullam eos eligendi, enim voluptate assumenda delectus omnis itaque ut dolor quae. Mollitia, omnis.';
+    article13.appendChild(description13);
+
+    const a13 = document.createElement('a');
+    a13.textContent = 'Zobacz projekt';
+    a13.setAttribute('target', '_blank');
+    a13.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/HTML/project14.html');
+    a13.className = 'content__box-btn';
+    article13.appendChild(a13);
+
+    //Projekt 14
+
+    const article14 = document.createElement('article');
+    article14.className = 'content__box';
+    content.appendChild(article14);
+
+    const title14 = document.createElement('span');
+    title14.className = 'content__box-titleProject';
+    title14.textContent = 'Stoper';
+    article14.appendChild(title14);
+
+    const img14 = document.createElement('img');
+    img14.setAttribute('src', '../img/gif/gif13.gif');
+    img14.setAttribute('alt', 'projekt 5');
+    img14.className = 'content__box-image';
+    article14.appendChild(img14);
+
+    const description14 = document.createElement('p');
+    description14.className = 'content__box-description';
+    description14.textContent = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum exercitationem soluta dolorem error cumque odit praesentium ullam eos eligendi, enim voluptate assumenda delectus omnis itaque ut dolor quae. Mollitia, omnis.';
+    article14.appendChild(description14);
+
+    const a14 = document.createElement('a');
+    a14.textContent = 'Zobacz projekt';
+    a14.setAttribute('target', '_blank');
+    a14.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/HTML/project15.html');
+    a14.className = 'content__box-btn';
+    article14.appendChild(a14);
+
+
+
 }

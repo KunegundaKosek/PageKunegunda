@@ -21,6 +21,8 @@ export default function () {
     titleJavaScript.textContent = 'Projekty JavaScript';
     content.appendChild(titleJavaScript);
 
+    titleJavaScript.addEventListener('click', () => JavascriptPage());
+
     //TypeScript
     const titleTypeScript = document.createElement('p');
     titleTypeScript.className = 'content__project content__ts';
@@ -42,17 +44,12 @@ export default function () {
     titleReact.textContent = 'Projekty React';
     content.appendChild(titleReact);
 
-    // BOOTSTRAP
-    const titleBootstrap = document.createElement('p');
-    titleBootstrap.className = 'content__project content__boot';
-    titleBootstrap.id = 'bootstrap';
-    titleBootstrap.textContent = 'Projekty Bootstrap';
-    content.appendChild(titleBootstrap);
-
-    const js = document.getElementById('javascript');
-    js.addEventListener('click', () => {
-        JavascriptPage();
-    })
+    // jQuery
+    const titlejQuery = document.createElement('p');
+    titlejQuery.className = 'content__project content__jquery';
+    titlejQuery.id = 'jquery';
+    titlejQuery.textContent = 'Projekty jQuery';
+    content.appendChild(titlejQuery);
 
 
 

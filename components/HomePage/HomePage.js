@@ -68,6 +68,11 @@ export default function () {
     button2.textContent = 'Czytaj dalej';
     article2.appendChild(button2);
 
+    const h2 = document.createElement('h2');
+    h2.textContent = "Zobacz również";
+    h2.className = "content__title";
+    content.appendChild(h2);
+
     //artykuł 3
 
     const article3 = document.createElement('article');
@@ -75,14 +80,14 @@ export default function () {
     content.appendChild(article3);
 
     const foto3 = document.createElement('img');
-    foto3.setAttribute('src', '../../img/foto3.jpg');
-    foto3.setAttribute('alt', 'zdjecie misia');
+    foto3.setAttribute('src', '../../img/pokedex.jpg');
+    foto3.setAttribute('alt', 'pokedex');
     foto3.setAttribute('class', 'content__article-img');
     article3.appendChild(foto3);
 
     const title3 = document.createElement('h3');
     title3.className = 'content__article-title';
-    title3.textContent = 'TYTUŁ 3';
+    title3.textContent = 'Pokedex';
     article3.appendChild(title3);
 
     const description3 = document.createElement('p');
@@ -102,14 +107,14 @@ export default function () {
      content.appendChild(article4);
  
      const foto4 = document.createElement('img');
-     foto4.setAttribute('src', '../../img/foto3.jpg');
+     foto4.setAttribute('src', '../../img/shop.jpg');
      foto4.setAttribute('alt', 'zdjecie misia');
      foto4.setAttribute('class', 'content__article-img');
      article4.appendChild(foto4);
  
      const title4 = document.createElement('h3');
      title4.className = 'content__article-title';
-     title4.textContent = 'TYTUŁ 3';
+     title4.textContent = 'Sklep z ubraniami';
      article4.appendChild(title4);
  
      const description4 = document.createElement('p');

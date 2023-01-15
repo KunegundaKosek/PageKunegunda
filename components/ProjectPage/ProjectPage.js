@@ -1,6 +1,10 @@
+import button from "./button.js";
 import JavascriptPage from "./JavascriptPage.js";
 
 export default function () {
+
+
+
     const content = document.querySelector('.content');
     content.innerHTML = '';
     content.style.display = 'block';
@@ -20,8 +24,6 @@ export default function () {
     titleJavaScript.id = 'javascript';
     titleJavaScript.textContent = 'Projekty JavaScript';
     content.appendChild(titleJavaScript);
-
-    titleJavaScript.addEventListener('click', () => JavascriptPage());
 
     //TypeScript
     const titleTypeScript = document.createElement('p');
@@ -51,6 +53,6 @@ export default function () {
     titlejQuery.textContent = 'Projekty jQuery';
     content.appendChild(titlejQuery);
 
-
+    button();
 
 }

@@ -1,13 +1,19 @@
+import Build from "../Build.js";
+import ProjectPage from "../ProjectPage/ProjectPage.js";
+import CVPage from "./CVPage.js";
+import SkillsPage from "./SkillsPage.js";
+
+
 export default function () {
 
     const content = document.querySelector('.content');
     content.innerHTML = '';
 
     //kolor przycisków
-    const projectButton = document.getElementById('projectButton');
-    projectButton.style.color = 'white';
-    const homeButton = document.getElementById('homeButton');
-    homeButton.style.color = 'crimson';
+    // const projectButton = document.getElementById('projectButton');
+    // projectButton.style.color = 'white';
+    // const homeButton = document.getElementById('homeButton');
+    // homeButton.style.color = 'crimson';
 
     const h1 = document.createElement('h1');
     h1.className = 'content__title';
@@ -80,52 +86,85 @@ export default function () {
     content.appendChild(article3);
 
     const foto3 = document.createElement('img');
-    foto3.setAttribute('src', '../../img/pokedex.jpg');
+    foto3.setAttribute('src', '../../img/weather.jpg');
     foto3.setAttribute('alt', 'pokedex');
     foto3.setAttribute('class', 'content__article-img');
     article3.appendChild(foto3);
 
     const title3 = document.createElement('h3');
     title3.className = 'content__article-title';
-    title3.textContent = 'Pokedex';
+    title3.textContent = 'Aplikacja React - pogoda';
     article3.appendChild(title3);
 
     const description3 = document.createElement('p');
     description3.className = 'content__article-description';
-    description3.textContent = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum exercitationem soluta dolorem error cumque odit praesentium ullam eos eligendi, enim voluptate assumenda delectus omnis itaque ut dolor quae. Mollitia, omnis.';
+    description3.textContent = 'Aplikacja zbudowana we frameworku React z użyciem API. Na stronie można sprawdzić pogodę dla wybranego miasta';
     article3.appendChild(description3);
 
     const button3 = document.createElement('button');
     button3.className = 'content__article-button';
-    button3.textContent = 'Czytaj dalej';
+    button3.id = 'weather';
+    button3.textContent = 'Zobacz';
     article3.appendChild(button3);
 
-     //artykuł 4
+    //artykuł 4
 
-     const article4 = document.createElement('article');
-     article4.className = 'content__article';
-     content.appendChild(article4);
- 
-     const foto4 = document.createElement('img');
-     foto4.setAttribute('src', '../../img/shop.jpg');
-     foto4.setAttribute('alt', 'zdjecie misia');
-     foto4.setAttribute('class', 'content__article-img');
-     article4.appendChild(foto4);
- 
-     const title4 = document.createElement('h3');
-     title4.className = 'content__article-title';
-     title4.textContent = 'Sklep z ubraniami';
-     article4.appendChild(title4);
- 
-     const description4 = document.createElement('p');
-     description4.className = 'content__article-description';
-     description4.textContent = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum exercitationem soluta dolorem error cumque odit praesentium ullam eos eligendi, enim voluptate assumenda delectus omnis itaque ut dolor quae. Mollitia, omnis.';
-     article4.appendChild(description4);
- 
-     const button4 = document.createElement('button');
-     button4.className = 'content__article-button';
-     button4.textContent = 'Czytaj dalej';
-     article4.appendChild(button4);
+    const article4 = document.createElement('article');
+    article4.className = 'content__article';
+    content.appendChild(article4);
 
+    const foto4 = document.createElement('img');
+    foto4.setAttribute('src', '../../img/shop.jpg');
+    foto4.setAttribute('alt', 'zdjecie misia');
+    foto4.setAttribute('class', 'content__article-img');
+    article4.appendChild(foto4);
+
+    const title4 = document.createElement('h3');
+    title4.className = 'content__article-title';
+    title4.textContent = 'Sklep z ubraniami';
+    article4.appendChild(title4);
+
+    const description4 = document.createElement('p');
+    description4.className = 'content__article-description';
+    description4.textContent = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum exercitationem soluta dolorem error cumque odit praesentium ullam eos eligendi, enim voluptate assumenda delectus omnis itaque ut dolor quae. Mollitia, omnis.';
+    article4.appendChild(description4);
+
+    const button4 = document.createElement('button');
+    button4.className = 'content__article-button';
+    button4.id = 'shop';
+    button4.textContent = 'Czytaj dalej';
+    article4.appendChild(button4);
+
+
+    // ---------------------
+
+
+    const projectButton = document.getElementById('projectButton');
+    projectButton.style.color = "white";
+    projectButton.addEventListener('click', () => {
+        ProjectPage();
+        projectButton.style.color = 'crimson';
+        console.log('renderuje ProjectPage');
+    })
+
+    const cv = document.getElementById('cv');
+    cv.addEventListener('click', () => {
+        CVPage();
+    })
+
+    const skillsButton = document.getElementById('skills');
+    skillsButton.addEventListener('click', () => {
+        SkillsPage();
+    })
+
+    const weatherButton = document.getElementById('weather');
+    weatherButton.addEventListener('click', () => {
+        Build();
+    })
+
+    const shop = document.getElementById('shop');
+    shop.addEventListener('click', () => {
+        Build();
+    })
 
 }

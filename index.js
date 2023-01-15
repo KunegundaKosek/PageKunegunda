@@ -1,14 +1,18 @@
+import Build from "./components/Build.js";
 import CVPage from "./components/HomePage/CVPage.js";
 import HomePage from "./components/HomePage/HomePage.js";
 import SkillsPage from "./components/HomePage/SkillsPage.js";
-import JavascriptPage from "./components/ProjectPage/JavascriptPage.js";
+// import CSSPage from "./components/ProjectPage/CSSPage.js";
+// import JavascriptPage from "./components/ProjectPage/JavascriptPage.js";
 import ProjectPage from "./components/ProjectPage/ProjectPage.js";
 
 const content = document.querySelector('.content');
 
-// HomePage();
+
 // SkillsPage();
-JavascriptPage();
+// HomePage();
+
+CVPage();
 
 const homeButton = document.getElementById('homeButton');
 homeButton.addEventListener('click', () => {
@@ -33,4 +37,14 @@ projectButton.addEventListener('click', () => {
 // const skillsButton = document.getElementById('skills');
 // skillsButton.addEventListener('click', () => {
 //     SkillsPage();
+// })
+
+// const pokedexButton = document.getElementById('pokedex');
+// pokedexButton.addEventListener('click', () => {
+//     Build();
+// })
+
+// const shop = document.getElementById('shop');
+// shop.addEventListener('click', () => {
+//     Build();
 // })

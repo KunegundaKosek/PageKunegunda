@@ -11,6 +11,9 @@
   transition: 0.3s;
   cursor: pointer;
 }
+.content__jquery {
+  margin-bottom: 100vh;
+}
 .content__js:hover {
   transform: translateX(50px);
   border-left: 10px solid orange;
@@ -45,6 +48,7 @@
   font-size: 5rem;
   font-family: "Patrick Hand", cursive;
   margin: 30px 0;
+  padding: 0 40px;
 }
 .content__box-image {
   display: block;
@@ -70,4 +74,11 @@
   padding: 11px;
   text-decoration: none;
   color: black;
+}
+@media (max-width: 1000px) {
+  .content__box-btn {
+    width: 50%;
+    height: 53px;
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=ProjectPage.css.map */

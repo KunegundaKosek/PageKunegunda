@@ -9,24 +9,24 @@ export default function () {
     const projectButton = document.getElementById('projectButton');
     projectButton.style.color = 'crimson';
 
-    document.title = "Projekty JavaScript";
+    document.title = "Projekty CSS";
 
     ProjectPage();
 
     const jquery = document.querySelector('.content__jquery');
     jquery.style.marginBottom = "0px";
 
-    const javascript = document.getElementById('javascript');
-    javascript.style.paddingLeft = "5px";
-    javascript.style.borderLeft = '10px solid orange';
-    javascript.style.fontWeight = 'bold';
+    const css = document.getElementById('css');
+    css.style.paddingLeft = "5px";
+    css.style.borderLeft = '10px solid orange';
+    css.style.fontWeight = 'bold';
 
     const title = document.querySelector('.content__title');
     title.remove();
 
     const h1 = document.createElement('h1');
     h1.className = 'content__title';
-    h1.textContent = 'Projekty JavaScript';
+    h1.textContent = 'Projekty CSS';
     content.appendChild(h1);
 
     // Projekt 1;
@@ -37,11 +37,11 @@ export default function () {
 
     const title1 = document.createElement('span');
     title1.className = 'content__box-titleProject';
-    title1.textContent = 'Wykrycie i wyświetlanie pozycji myszki';
+    title1.textContent = 'Obrazek';
     article1.appendChild(title1);
 
     const img1 = document.createElement('img');
-    img1.setAttribute('src', '../img/gif/gif1.gif');
+    img1.setAttribute('src', '../../img/foto3.jpg');
     img1.setAttribute('alt', 'projekt 1');
     img1.className = 'content__box-image';
     article1.appendChild(img1);
@@ -54,22 +54,23 @@ export default function () {
     const a1 = document.createElement('a');
     a1.textContent = 'Zobacz projekt';
     a1.setAttribute('target', '_blank');
-    a1.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/project1.html');
+    a1.setAttribute('href', 'https://kunegundakosek.github.io/HTML-CSSProject/Project1/project1.html');
     a1.className = 'content__box-btn';
     article1.appendChild(a1);
 
-    //projekt 2
+    // Projekt 2;
+
     const article2 = document.createElement('article');
     article2.className = 'content__box';
     content.appendChild(article2);
 
     const title2 = document.createElement('span');
     title2.className = 'content__box-titleProject';
-    title2.textContent = 'Zmiana koloru tła przy kliknięciu zależnie od pozycji';
+    title2.textContent = 'Szachownica';
     article2.appendChild(title2);
 
     const img2 = document.createElement('img');
-    img2.setAttribute('src', '../img/gif/gif2.gif');
+    img2.setAttribute('src', '../../img/foto3.jpg');
     img2.setAttribute('alt', 'projekt 1');
     img2.className = 'content__box-image';
     article2.appendChild(img2);
@@ -82,23 +83,23 @@ export default function () {
     const a2 = document.createElement('a');
     a2.textContent = 'Zobacz projekt';
     a2.setAttribute('target', '_blank');
-    a2.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/project2.html');
+    a2.setAttribute('href', 'https://kunegundakosek.github.io/HTML-CSSProject/Project2/project2.html');
     a2.className = 'content__box-btn';
     article2.appendChild(a2);
 
+    // Projekt 3;
 
-    //projekt 3
     const article3 = document.createElement('article');
     article3.className = 'content__box';
     content.appendChild(article3);
 
     const title3 = document.createElement('span');
     title3.className = 'content__box-titleProject';
-    title3.textContent = 'Łapanie i upuszczanie kwadratu ze zmianą jego koloru';
+    title3.textContent = 'Zmiana koloru tła i wyświetlanie tekstu po najechaniu na przycisk';
     article3.appendChild(title3);
 
     const img3 = document.createElement('img');
-    img3.setAttribute('src', '../img/gif/gif3.gif');
+    img3.setAttribute('src', '../../img/foto3.jpg');
     img3.setAttribute('alt', 'projekt 1');
     img3.className = 'content__box-image';
     article3.appendChild(img3);
@@ -111,22 +112,23 @@ export default function () {
     const a3 = document.createElement('a');
     a3.textContent = 'Zobacz projekt';
     a3.setAttribute('target', '_blank');
-    a3.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/project3.html');
+    a3.setAttribute('href', 'https://kunegundakosek.github.io/HTML-CSSProject/Project4/project4.html');
     a3.className = 'content__box-btn';
     article3.appendChild(a3);
 
-    //projekt 4
+    // Projekt 4;
+
     const article4 = document.createElement('article');
     article4.className = 'content__box';
     content.appendChild(article4);
 
     const title4 = document.createElement('span');
     title4.className = 'content__box-titleProject';
-    title4.textContent = 'Rozjaśnianie i przyciemnianie tła przy pomocy klawiszy';
+    title4.textContent = 'Kwadrat zmieniający rozmiar i pozycję po najechaniu na przycisk';
     article4.appendChild(title4);
 
     const img4 = document.createElement('img');
-    img4.setAttribute('src', '../img/gif/gif4.gif');
+    img4.setAttribute('src', '../../img/foto3.jpg');
     img4.setAttribute('alt', 'projekt 1');
     img4.className = 'content__box-image';
     article4.appendChild(img4);
@@ -139,23 +141,24 @@ export default function () {
     const a4 = document.createElement('a');
     a4.textContent = 'Zobacz projekt';
     a4.setAttribute('target', '_blank');
-    a4.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/project4.html');
+    a4.setAttribute('href', 'https://kunegundakosek.github.io/HTML-CSSProject/Project5/project5.html');
     a4.className = 'content__box-btn';
     article4.appendChild(a4);
 
-    //projekt 5
+    // Projekt 5;
+
     const article5 = document.createElement('article');
-    article5.className = 'content__box';
+    article4.className = 'content__box';
     content.appendChild(article5);
 
     const title5 = document.createElement('span');
     title5.className = 'content__box-titleProject';
-    title5.textContent = 'Podaj hasło i odkryj wiadomość';
+    title5.textContent = ' Domek pojawiający się po najechaniu na przycisk';
     article5.appendChild(title5);
 
     const img5 = document.createElement('img');
-    img5.setAttribute('src', '../img/gif/gif5.gif');
-    img5.setAttribute('alt', 'projekt 5');
+    img5.setAttribute('src', '../../img/foto3.jpg');
+    img5.setAttribute('alt', 'projekt 1');
     img5.className = 'content__box-image';
     article5.appendChild(img5);
 
@@ -167,23 +170,25 @@ export default function () {
     const a5 = document.createElement('a');
     a5.textContent = 'Zobacz projekt';
     a5.setAttribute('target', '_blank');
-    a5.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/project5.html');
+    a5.setAttribute('href', 'https://kunegundakosek.github.io/HTML-CSSProject/Project7/project7.html');
     a5.className = 'content__box-btn';
     article5.appendChild(a5);
 
-    //projekt 6
+
+    // Projekt 6;
+
     const article6 = document.createElement('article');
     article6.className = 'content__box';
     content.appendChild(article6);
 
     const title6 = document.createElement('span');
     title6.className = 'content__box-titleProject';
-    title6.textContent = 'Losowanie';
+    title6.textContent = 'Zegar';
     article6.appendChild(title6);
 
     const img6 = document.createElement('img');
-    img6.setAttribute('src', '../img/gif/gif6.gif');
-    img6.setAttribute('alt', 'projekt 5');
+    img6.setAttribute('src', '../../img/foto3.jpg');
+    img6.setAttribute('alt', 'projekt 1');
     img6.className = 'content__box-image';
     article6.appendChild(img6);
 
@@ -195,23 +200,24 @@ export default function () {
     const a6 = document.createElement('a');
     a6.textContent = 'Zobacz projekt';
     a6.setAttribute('target', '_blank');
-    a6.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/project6.html');
+    a6.setAttribute('href', 'https://kunegundakosek.github.io/HTML-CSSProject/Project8/project8.html');
     a6.className = 'content__box-btn';
     article6.appendChild(a6);
 
-    //projekt 7
+    // Projekt 7;
+
     const article7 = document.createElement('article');
     article7.className = 'content__box';
     content.appendChild(article7);
 
     const title7 = document.createElement('span');
     title7.className = 'content__box-titleProject';
-    title7.textContent = 'Powiększ element';
+    title7.textContent = 'Przycisk z animacją';
     article7.appendChild(title7);
 
     const img7 = document.createElement('img');
-    img7.setAttribute('src', '../img/gif/gif7.gif');
-    img7.setAttribute('alt', 'projekt 5');
+    img7.setAttribute('src', '../../img/foto3.jpg');
+    img7.setAttribute('alt', 'projekt 1');
     img7.className = 'content__box-image';
     article7.appendChild(img7);
 
@@ -223,23 +229,24 @@ export default function () {
     const a7 = document.createElement('a');
     a7.textContent = 'Zobacz projekt';
     a7.setAttribute('target', '_blank');
-    a7.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/project7.html');
+    a7.setAttribute('href', 'https://kunegundakosek.github.io/HTML-CSSProject/Project9/project9.html');
     a7.className = 'content__box-btn';
     article7.appendChild(a7);
 
-    //projekt 8
+    // Projekt 8;
+
     const article8 = document.createElement('article');
     article8.className = 'content__box';
     content.appendChild(article8);
 
     const title8 = document.createElement('span');
     title8.className = 'content__box-titleProject';
-    title8.textContent = 'Dodawanie elementów po kliknięciu';
+    title8.textContent = 'Zmiana rozmiaru tekstu i dodawanie bordera po najechaniu na przycisk';
     article8.appendChild(title8);
 
     const img8 = document.createElement('img');
-    img8.setAttribute('src', '../img/gif/gif8.gif');
-    img8.setAttribute('alt', 'projekt 5');
+    img8.setAttribute('src', '../../img/foto3.jpg');
+    img8.setAttribute('alt', 'projekt 1');
     img8.className = 'content__box-image';
     article8.appendChild(img8);
 
@@ -251,23 +258,24 @@ export default function () {
     const a8 = document.createElement('a');
     a8.textContent = 'Zobacz projekt';
     a8.setAttribute('target', '_blank');
-    a8.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/project8.html');
+    a8.setAttribute('href', 'https://kunegundakosek.github.io/HTML-CSSProject/Project10/project10.html');
     a8.className = 'content__box-btn';
     article8.appendChild(a8);
 
-    //projekt 9
+    // Projekt 9;
+
     const article9 = document.createElement('article');
     article9.className = 'content__box';
     content.appendChild(article9);
 
     const title9 = document.createElement('span');
     title9.className = 'content__box-titleProject';
-    title9.textContent = 'Kwadrat zmieniający rozmiar przy scrolowaniu strony';
+    title9.textContent = 'Wschodzące i zachodzące słońce';
     article9.appendChild(title9);
 
     const img9 = document.createElement('img');
-    img9.setAttribute('src', '../img/gif/gif9.gif');
-    img9.setAttribute('alt', 'projekt 5');
+    img9.setAttribute('src', '../../img/foto3.jpg');
+    img9.setAttribute('alt', 'projekt 1');
     img9.className = 'content__box-image';
     article9.appendChild(img9);
 
@@ -279,23 +287,24 @@ export default function () {
     const a9 = document.createElement('a');
     a9.textContent = 'Zobacz projekt';
     a9.setAttribute('target', '_blank');
-    a9.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/project9.html');
+    a9.setAttribute('href', 'https://kunegundakosek.github.io/HTML-CSSProject/Project11/project11.html');
     a9.className = 'content__box-btn';
     article9.appendChild(a9);
 
-    //projekt 10
+    // Projekt 10;
+
     const article10 = document.createElement('article');
     article10.className = 'content__box';
     content.appendChild(article10);
 
     const title10 = document.createElement('span');
     title10.className = 'content__box-titleProject';
-    title10.textContent = 'Pasek zmieniający grubość i kolor przy scrolowaniu strony';
+    title10.textContent = 'Kwadrat zmieniający pozycję i kolor';
     article10.appendChild(title10);
 
     const img10 = document.createElement('img');
-    img10.setAttribute('src', '../img/gif/gif10.gif');
-    img10.setAttribute('alt', 'projekt 5');
+    img10.setAttribute('src', '../../img/foto3.jpg');
+    img10.setAttribute('alt', 'projekt 1');
     img10.className = 'content__box-image';
     article10.appendChild(img10);
 
@@ -307,23 +316,24 @@ export default function () {
     const a10 = document.createElement('a');
     a10.textContent = 'Zobacz projekt';
     a10.setAttribute('target', '_blank');
-    a10.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/project10.html');
+    a10.setAttribute('href', 'https://kunegundakosek.github.io/HTML-CSSProject/Project12/project12.html');
     a10.className = 'content__box-btn';
     article10.appendChild(a10);
 
-    //projekt 11
+    // Projekt 11;
+
     const article11 = document.createElement('article');
     article11.className = 'content__box';
     content.appendChild(article11);
 
     const title11 = document.createElement('span');
     title11.className = 'content__box-titleProject';
-    title11.textContent = 'Baner z automatycznie wymieniającymi się zdjęciami i tekstami';
+    title11.textContent = 'Disco';
     article11.appendChild(title11);
 
     const img11 = document.createElement('img');
-    img11.setAttribute('src', '../img/gif/gif11.gif');
-    img11.setAttribute('alt', 'projekt 5');
+    img11.setAttribute('src', '../../img/foto3.jpg');
+    img11.setAttribute('alt', 'projekt 1');
     img11.className = 'content__box-image';
     article11.appendChild(img11);
 
@@ -335,11 +345,11 @@ export default function () {
     const a11 = document.createElement('a');
     a11.textContent = 'Zobacz projekt';
     a11.setAttribute('target', '_blank');
-    a11.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/project11.html');
+    a11.setAttribute('href', 'https://kunegundakosek.github.io/HTML-CSSProject/Project14/project14.html');
     a11.className = 'content__box-btn';
     article11.appendChild(a11);
 
-    //Projekt 12
+    // Projekt 12;
 
     const article12 = document.createElement('article');
     article12.className = 'content__box';
@@ -347,12 +357,12 @@ export default function () {
 
     const title12 = document.createElement('span');
     title12.className = 'content__box-titleProject';
-    title12.textContent = 'Baner z automatycznie wymieniającymi się zdjęciami i tekstami';
+    title12.textContent = 'Animowane kropki';
     article12.appendChild(title12);
 
     const img12 = document.createElement('img');
-    img12.setAttribute('src', '../img/gif/gif12.gif');
-    img12.setAttribute('alt', 'projekt 5');
+    img12.setAttribute('src', '../../img/foto3.jpg');
+    img12.setAttribute('alt', 'projekt 1');
     img12.className = 'content__box-image';
     article12.appendChild(img12);
 
@@ -364,68 +374,16 @@ export default function () {
     const a12 = document.createElement('a');
     a12.textContent = 'Zobacz projekt';
     a12.setAttribute('target', '_blank');
-    a12.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/project12.html');
+    a12.setAttribute('href', 'https://kunegundakosek.github.io/HTML-CSSProject/Project14/project14.html');
     a12.className = 'content__box-btn';
     article12.appendChild(a12);
 
-    //Projekt 13
 
-    const article13 = document.createElement('article');
-    article13.className = 'content__box';
-    content.appendChild(article13);
 
-    const title13 = document.createElement('span');
-    title13.className = 'content__box-titleProject';
-    title13.textContent = 'Odliczanie czasu do jakiegoś wydarzenia';
-    article13.appendChild(title13);
 
-    const img13 = document.createElement('img');
-    img13.setAttribute('src', '../img/gif/gif13.gif');
-    img13.setAttribute('alt', 'projekt 5');
-    img13.className = 'content__box-image';
-    article13.appendChild(img13);
 
-    const description13 = document.createElement('p');
-    description13.className = 'content__box-description';
-    description13.textContent = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum exercitationem soluta dolorem error cumque odit praesentium ullam eos eligendi, enim voluptate assumenda delectus omnis itaque ut dolor quae. Mollitia, omnis.';
-    article13.appendChild(description13);
-
-    const a13 = document.createElement('a');
-    a13.textContent = 'Zobacz projekt';
-    a13.setAttribute('target', '_blank');
-    a13.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/HTML/project14.html');
-    a13.className = 'content__box-btn';
-    article13.appendChild(a13);
-
-    //Projekt 14
-
-    const article14 = document.createElement('article');
-    article14.className = 'content__box';
-    content.appendChild(article14);
-
-    const title14 = document.createElement('span');
-    title14.className = 'content__box-titleProject';
-    title14.textContent = 'Stoper';
-    article14.appendChild(title14);
-
-    const img14 = document.createElement('img');
-    img14.setAttribute('src', '../img/gif/gif13.gif');
-    img14.setAttribute('alt', 'projekt 5');
-    img14.className = 'content__box-image';
-    article14.appendChild(img14);
-
-    const description14 = document.createElement('p');
-    description14.className = 'content__box-description';
-    description14.textContent = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum exercitationem soluta dolorem error cumque odit praesentium ullam eos eligendi, enim voluptate assumenda delectus omnis itaque ut dolor quae. Mollitia, omnis.';
-    article14.appendChild(description14);
-
-    const a14 = document.createElement('a');
-    a14.textContent = 'Zobacz projekt';
-    a14.setAttribute('target', '_blank');
-    a14.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/HTML/project15.html');
-    a14.className = 'content__box-btn';
-    article14.appendChild(a14);
 
 
     button();
+
 }

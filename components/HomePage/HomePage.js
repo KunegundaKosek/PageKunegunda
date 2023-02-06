@@ -9,6 +9,9 @@ export default function () {
     const content = document.querySelector('.content');
     content.innerHTML = '';
 
+    const title = document.querySelector('title');
+    title.innerHTML = "Strona Główna";
+
     //kolor przycisków
     // const projectButton = document.getElementById('projectButton');
     // projectButton.style.color = 'white';
@@ -86,19 +89,19 @@ export default function () {
     content.appendChild(article3);
 
     const foto3 = document.createElement('img');
-    foto3.setAttribute('src', '../../img/weather.jpg');
+    foto3.setAttribute('src', 'https://cdn.pixabay.com/photo/2016/07/23/13/21/pokemon-1536855_1280.png');
     foto3.setAttribute('alt', 'pokedex');
     foto3.setAttribute('class', 'content__article-img');
     article3.appendChild(foto3);
 
     const title3 = document.createElement('h3');
     title3.className = 'content__article-title';
-    title3.textContent = 'Aplikacja React - pogoda';
+    title3.textContent = 'Aplikacja React - Pokedex';
     article3.appendChild(title3);
 
     const description3 = document.createElement('p');
     description3.className = 'content__article-description';
-    description3.textContent = 'Aplikacja zbudowana we frameworku React z użyciem API. Na stronie można sprawdzić pogodę dla wybranego miasta';
+    description3.textContent = 'Aplikacja zbudowana w bibliotece React. ';
     article3.appendChild(description3);
 
     const button3 = document.createElement('button');

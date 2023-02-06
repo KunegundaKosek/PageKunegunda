@@ -10,9 +10,9 @@ const content = document.querySelector('.content');
 
 
 // SkillsPage();
-// HomePage();
+HomePage();
 
-CVPage();
+// CVPage();
 
 const homeButton = document.getElementById('homeButton');
 homeButton.addEventListener('click', () => {

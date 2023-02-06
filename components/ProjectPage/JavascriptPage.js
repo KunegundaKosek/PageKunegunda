@@ -54,7 +54,7 @@ export default function () {
     const a1 = document.createElement('a');
     a1.textContent = 'Zobacz projekt';
     a1.setAttribute('target', '_blank');
-    a1.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/project1.html');
+    a1.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/HTML/project1.html');
     a1.className = 'content__box-btn';
     article1.appendChild(a1);
 
@@ -82,7 +82,7 @@ export default function () {
     const a2 = document.createElement('a');
     a2.textContent = 'Zobacz projekt';
     a2.setAttribute('target', '_blank');
-    a2.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/project2.html');
+    a2.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/HTML/project2.html');
     a2.className = 'content__box-btn';
     article2.appendChild(a2);
 
@@ -111,7 +111,7 @@ export default function () {
     const a3 = document.createElement('a');
     a3.textContent = 'Zobacz projekt';
     a3.setAttribute('target', '_blank');
-    a3.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/project3.html');
+    a3.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/HTML/project3.html');
     a3.className = 'content__box-btn';
     article3.appendChild(a3);
 
@@ -139,7 +139,7 @@ export default function () {
     const a4 = document.createElement('a');
     a4.textContent = 'Zobacz projekt';
     a4.setAttribute('target', '_blank');
-    a4.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/project4.html');
+    a4.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/HTML/project4.html');
     a4.className = 'content__box-btn';
     article4.appendChild(a4);
 
@@ -167,7 +167,7 @@ export default function () {
     const a5 = document.createElement('a');
     a5.textContent = 'Zobacz projekt';
     a5.setAttribute('target', '_blank');
-    a5.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/project5.html');
+    a5.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/HTML/project5.html');
     a5.className = 'content__box-btn';
     article5.appendChild(a5);
 
@@ -195,7 +195,7 @@ export default function () {
     const a6 = document.createElement('a');
     a6.textContent = 'Zobacz projekt';
     a6.setAttribute('target', '_blank');
-    a6.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/project6.html');
+    a6.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/HTML/project6.html');
     a6.className = 'content__box-btn';
     article6.appendChild(a6);
 
@@ -223,7 +223,7 @@ export default function () {
     const a7 = document.createElement('a');
     a7.textContent = 'Zobacz projekt';
     a7.setAttribute('target', '_blank');
-    a7.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/project7.html');
+    a7.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/HTML/project7.html');
     a7.className = 'content__box-btn';
     article7.appendChild(a7);
 
@@ -251,7 +251,7 @@ export default function () {
     const a8 = document.createElement('a');
     a8.textContent = 'Zobacz projekt';
     a8.setAttribute('target', '_blank');
-    a8.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/project8.html');
+    a8.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/HTML/project8.html');
     a8.className = 'content__box-btn';
     article8.appendChild(a8);
 
@@ -279,7 +279,7 @@ export default function () {
     const a9 = document.createElement('a');
     a9.textContent = 'Zobacz projekt';
     a9.setAttribute('target', '_blank');
-    a9.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/project9.html');
+    a9.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/HTML/project9.html');
     a9.className = 'content__box-btn';
     article9.appendChild(a9);
 
@@ -307,7 +307,7 @@ export default function () {
     const a10 = document.createElement('a');
     a10.textContent = 'Zobacz projekt';
     a10.setAttribute('target', '_blank');
-    a10.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/project10.html');
+    a10.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/HTML/project10.html');
     a10.className = 'content__box-btn';
     article10.appendChild(a10);
 
@@ -335,7 +335,7 @@ export default function () {
     const a11 = document.createElement('a');
     a11.textContent = 'Zobacz projekt';
     a11.setAttribute('target', '_blank');
-    a11.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/project11.html');
+    a11.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/HTML/project11.html');
     a11.className = 'content__box-btn';
     article11.appendChild(a11);
 
@@ -347,7 +347,7 @@ export default function () {
 
     const title12 = document.createElement('span');
     title12.className = 'content__box-titleProject';
-    title12.textContent = 'Baner z automatycznie wymieniającymi się zdjęciami i tekstami';
+    title12.textContent = 'Zegar';
     article12.appendChild(title12);
 
     const img12 = document.createElement('img');
@@ -364,7 +364,7 @@ export default function () {
     const a12 = document.createElement('a');
     a12.textContent = 'Zobacz projekt';
     a12.setAttribute('target', '_blank');
-    a12.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/project12.html');
+    a12.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/HTML/project13.html');
     a12.className = 'content__box-btn';
     article12.appendChild(a12);
 
@@ -405,7 +405,7 @@ export default function () {
 
     const title14 = document.createElement('span');
     title14.className = 'content__box-titleProject';
-    title14.textContent = 'Stoper';
+    title14.textContent = 'Ruch myszką a ruch elementów';
     article14.appendChild(title14);
 
     const img14 = document.createElement('img');
@@ -422,9 +422,38 @@ export default function () {
     const a14 = document.createElement('a');
     a14.textContent = 'Zobacz projekt';
     a14.setAttribute('target', '_blank');
-    a14.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/HTML/project15.html');
+    a14.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/HTML/Project18.html');
     a14.className = 'content__box-btn';
     article14.appendChild(a14);
+
+    //Projekt 15
+
+    const article15 = document.createElement('article');
+    article15.className = 'content__box';
+    content.appendChild(article15);
+
+    const title15 = document.createElement('span');
+    title15.className = 'content__box-titleProject';
+    title15.textContent = 'Ruch myszką a ruch elementów';
+    article15.appendChild(title15);
+
+    const img15 = document.createElement('img');
+    img15.setAttribute('src', '../img/GIF/gif15.gif');
+    img15.setAttribute('alt', 'projekt 5');
+    img15.className = 'content__box-image';
+    article15.appendChild(img15);
+
+    const description15 = document.createElement('p');
+    description15.className = 'content__box-description';
+    description15.textContent = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum exercitationem soluta dolorem error cumque odit praesentium ullam eos eligendi, enim voluptate assumenda delectus omnis itaque ut dolor quae. Mollitia, omnis.';
+    article15.appendChild(description15);
+
+    const a15 = document.createElement('a');
+    a15.textContent = 'Zobacz projekt';
+    a15.setAttribute('target', '_blank');
+    a15.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/HTML/Project18.html');
+    a15.className = 'content__box-btn';
+    article15.appendChild(a15);
 
 
     button();

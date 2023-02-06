@@ -1,5 +1,6 @@
 import Build from "../Build.js";
 import ProjectPage from "../ProjectPage/ProjectPage.js";
+import Animation from "./Animation.js";
 import CVPage from "./CVPage.js";
 import SkillsPage from "./SkillsPage.js";
 
@@ -11,7 +12,7 @@ export default function () {
 
     const title = document.querySelector('title');
     title.innerHTML = "Strona Główna";
-
+    // Animation();
 
     //kolor przycisków
     // const projectButton = document.getElementById('projectButton');
@@ -21,8 +22,9 @@ export default function () {
 
     const h1 = document.createElement('h1');
     h1.className = 'content__title';
-    h1.textContent = 'Witam na stronie';
+    h1.id = 'h1';
     content.appendChild(h1);
+
 
     // Artykuł 1 po lewo {ludzik}
     const article1 = document.createElement('article');
@@ -46,7 +48,7 @@ export default function () {
     article1.appendChild(description1);
 
     const button1 = document.createElement('a');
-    button1.setAttribute('href', '../../cv.pdf');
+    button1.setAttribute('href', 'CVKunegundaKosek.pdf');
     button1.setAttribute('target', '_blank');
     button1.className = 'content__article-button';
     button1.id = 'cv';
@@ -81,9 +83,11 @@ export default function () {
     article2.appendChild(button2);
 
     const h2 = document.createElement('h2');
-    h2.textContent = "Zobacz również";
     h2.className = "content__title";
+    h2.id = 'h2';
     content.appendChild(h2);
+
+    Animation();
 
     //artykuł 3
 
@@ -168,6 +172,10 @@ export default function () {
     skillsButton.addEventListener('click', () => {
         SkillsPage();
     })
+
+    const contactButton = document.getElementById('contactButton').addEventListener('click', () => {
+        
+    });
 
     // const shop = document.getElementById('shop');
     // shop.addEventListener('click', () => {

@@ -352,11 +352,19 @@ html {
     line-height: 5rem;
   }
 }
+.menu__list-item a {
+  color: white;
+  transition: 1s;
+  padding: 0 50px;
+}
+.menu__list-item a:hover {
+  color: rgb(0, 119, 183);
+}
 .menu__list-item:hover {
   border-bottom: 2px solid yellow;
 }
 .menu__list-item:nth-last-child(1) {
-  padding: 0 10px;
+  padding: 0 50px;
   margin-left: auto;
   border: 2px solid gray;
 }

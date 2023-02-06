@@ -115,6 +115,7 @@ html {
     }
 }
 
+
 .menu {
     flex-basis: 100%;
     background-color: rgb(65, 51, 42);
@@ -145,19 +146,32 @@ html {
                 line-height: 5rem;
             }
 
+            //tutaj zmiana będzie
+            a {
+                color: white;
+                transition: 1s;
+                padding: 0 50px;
+            }
+
+            a:hover {
+                color: rgb(0, 119, 183);
+
+            }
+
             &:hover {
                 border-bottom: 2px solid yellow;
             }
 
+
+
             &:nth-last-child(1) {
-                padding: 0 10px;
+                padding: 0 50px;
                 margin-left: auto;
                 border: 2px solid gray;
 
                 @media (max-width: 1000px) {
                     border: none;
                 }
-
 
                 &:hover {
                     border-color: yellow;

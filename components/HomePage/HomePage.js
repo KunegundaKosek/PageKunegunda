@@ -12,6 +12,7 @@ export default function () {
     const title = document.querySelector('title');
     title.innerHTML = "Strona Główna";
 
+
     //kolor przycisków
     // const projectButton = document.getElementById('projectButton');
     // projectButton.style.color = 'white';
@@ -29,14 +30,14 @@ export default function () {
     content.appendChild(article1);
 
     const foto1 = document.createElement('img');
-    foto1.setAttribute('src', '../../img/foto1.jpg');
-    foto1.setAttribute('alt', 'zdjecie misia');
+    foto1.setAttribute('src', 'https://cdn.pixabay.com/photo/2015/12/22/08/09/entrepreneur-1103719_1280.jpg');
+    foto1.setAttribute('alt', 'ludzik z teczką');
     foto1.setAttribute('class', 'content__article-img');
     article1.appendChild(foto1);
 
     const title1 = document.createElement('h3');
     title1.className = 'content__article-title';
-    title1.textContent = 'CURRICULUM VITAE';
+    title1.textContent = 'CV';
     article1.appendChild(title1);
 
     const description1 = document.createElement('p');
@@ -56,9 +57,9 @@ export default function () {
     content.appendChild(article2);
 
     const foto2 = document.createElement('img');
-    foto2.setAttribute('src', '../../img/foto3.jpg');
+    foto2.setAttribute('src', 'https://cdn.pixabay.com/photo/2017/09/15/19/41/businessman-2753324_1280.jpg');
     foto2.setAttribute('alt', 'zdjecie misia');
-    foto2.setAttribute('class', 'content__article-img');
+    foto2.setAttribute('class', 'content__article-imgSkills');
     article2.appendChild(foto2);
 
     const title2 = document.createElement('h3');
@@ -89,14 +90,14 @@ export default function () {
     content.appendChild(article3);
 
     const foto3 = document.createElement('img');
-    foto3.setAttribute('src', 'https://cdn.pixabay.com/photo/2016/07/23/13/21/pokemon-1536855_1280.png');
+    foto3.setAttribute('src', 'https://cdn.pixabay.com/photo/2016/08/14/14/58/pokemon-1593048__480.jpg');
     foto3.setAttribute('alt', 'pokedex');
     foto3.setAttribute('class', 'content__article-img');
     article3.appendChild(foto3);
 
     const title3 = document.createElement('h3');
     title3.className = 'content__article-title';
-    title3.textContent = 'Aplikacja React - Pokedex';
+    title3.textContent = 'POKEDEX';
     article3.appendChild(title3);
 
     const description3 = document.createElement('p');
@@ -104,39 +105,45 @@ export default function () {
     description3.textContent = 'Aplikacja zbudowana w bibliotece React. ';
     article3.appendChild(description3);
 
-    const button3 = document.createElement('button');
+    const button3 = document.createElement('a');
+    button3.setAttribute('href', "https://kunegundakosek.github.io/ReactPokedex/");
+    button3.setAttribute('target', '_blank');
     button3.className = 'content__article-button';
-    button3.id = 'weather';
+    button3.id = 'pokedex';
     button3.textContent = 'Zobacz';
     article3.appendChild(button3);
 
-    //artykuł 4
+    const buttonPokedex = document.createElement('a');
+    buttonPokedex.setAttribute('href', "https://kunegundakosek.github.io/ReactPokedex/");
+    button3.appendChild(buttonPokedex);
 
-    const article4 = document.createElement('article');
-    article4.className = 'content__article';
-    content.appendChild(article4);
+    // //artykuł 4
 
-    const foto4 = document.createElement('img');
-    foto4.setAttribute('src', '../../img/shop.jpg');
-    foto4.setAttribute('alt', 'zdjecie misia');
-    foto4.setAttribute('class', 'content__article-img');
-    article4.appendChild(foto4);
+    // const article4 = document.createElement('article');
+    // article4.className = 'content__article-more';
+    // content.appendChild(article4);
 
-    const title4 = document.createElement('h3');
-    title4.className = 'content__article-title';
-    title4.textContent = 'Sklep z ubraniami';
-    article4.appendChild(title4);
+    // const foto4 = document.createElement('img');
+    // foto4.setAttribute('src', '../../img/shop.jpg');
+    // foto4.setAttribute('alt', 'zdjecie misia');
+    // foto4.setAttribute('class', 'content__article-img');
+    // article4.appendChild(foto4);
 
-    const description4 = document.createElement('p');
-    description4.className = 'content__article-description';
-    description4.textContent = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum exercitationem soluta dolorem error cumque odit praesentium ullam eos eligendi, enim voluptate assumenda delectus omnis itaque ut dolor quae. Mollitia, omnis.';
-    article4.appendChild(description4);
+    // const title4 = document.createElement('h3');
+    // title4.className = 'content__article-title';
+    // title4.textContent = 'Sklep z ubraniami';
+    // article4.appendChild(title4);
 
-    const button4 = document.createElement('button');
-    button4.className = 'content__article-button';
-    button4.id = 'shop';
-    button4.textContent = 'Czytaj dalej';
-    article4.appendChild(button4);
+    // const description4 = document.createElement('p');
+    // description4.className = 'content__article-description';
+    // description4.textContent = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum exercitationem soluta dolorem error cumque odit praesentium ullam eos eligendi, enim voluptate assumenda delectus omnis itaque ut dolor quae. Mollitia, omnis.';
+    // article4.appendChild(description4);
+
+    // const button4 = document.createElement('button');
+    // button4.className = 'content__article-button';
+    // button4.id = 'shop';
+    // button4.textContent = 'Czytaj dalej';
+    // article4.appendChild(button4);
 
 
     // ---------------------
@@ -160,14 +167,9 @@ export default function () {
         SkillsPage();
     })
 
-    const weatherButton = document.getElementById('weather');
-    weatherButton.addEventListener('click', () => {
-        Build();
-    })
-
-    const shop = document.getElementById('shop');
-    shop.addEventListener('click', () => {
-        Build();
-    })
+    // const shop = document.getElementById('shop');
+    // shop.addEventListener('click', () => {
+    //     Build();
+    // })
 
 }

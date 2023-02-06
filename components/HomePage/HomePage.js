@@ -30,7 +30,7 @@ export default function () {
     content.appendChild(article1);
 
     const foto1 = document.createElement('img');
-    foto1.setAttribute('src', 'https://cdn.pixabay.com/photo/2015/12/22/08/09/entrepreneur-1103719_1280.jpg');
+    foto1.setAttribute('src', '../img/foto1.jpg');
     foto1.setAttribute('alt', 'ludzik z teczką');
     foto1.setAttribute('class', 'content__article-img');
     article1.appendChild(foto1);

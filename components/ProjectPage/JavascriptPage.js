@@ -439,7 +439,7 @@ export default function () {
 
     const img15 = document.createElement('img');
     img15.setAttribute('src', '../img/GIF/gif15.gif');
-    img15.setAttribute('alt', 'projekt 5');
+        img15.setAttribute('alt', 'projekt 5');
     img15.className = 'content__box-image';
     article15.appendChild(img15);
 

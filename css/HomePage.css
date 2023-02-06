@@ -5,6 +5,11 @@
 .content img {
   border-radius: 14px;
 }
+.content a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
 .content__title {
   flex-basis: 100%;
   margin: 60px 0;

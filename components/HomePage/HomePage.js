@@ -30,7 +30,7 @@ export default function () {
     content.appendChild(article1);
 
     const foto1 = document.createElement('img');
-    foto1.setAttribute('src', '../img/foto1.jpg');
+    foto1.setAttribute('src', 'img/foto1.jpg');
     foto1.setAttribute('alt', 'ludzik z teczką');
     foto1.setAttribute('class', 'content__article-img');
     article1.appendChild(foto1);
@@ -45,10 +45,12 @@ export default function () {
     description1.textContent = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum exercitationem soluta dolorem error cumque odit praesentium ullam eos eligendi, enim voluptate assumenda delectus omnis itaque ut dolor quae. Mollitia, omnis.';
     article1.appendChild(description1);
 
-    const button1 = document.createElement('button');
+    const button1 = document.createElement('a');
+    button1.setAttribute('href', '../../cv.pdf');
+    button1.setAttribute('target', '_blank');
     button1.className = 'content__article-button';
     button1.id = 'cv';
-    button1.textContent = 'Czytaj dalej';
+    button1.textContent = 'Zobacz CV';
     article1.appendChild(button1);
 
     // Artykuł 2 po prawo {}
@@ -57,7 +59,7 @@ export default function () {
     content.appendChild(article2);
 
     const foto2 = document.createElement('img');
-    foto2.setAttribute('src', 'https://cdn.pixabay.com/photo/2017/09/15/19/41/businessman-2753324_1280.jpg');
+    foto2.setAttribute('src', 'img/foto2.jpg');
     foto2.setAttribute('alt', 'zdjecie misia');
     foto2.setAttribute('class', 'content__article-imgSkills');
     article2.appendChild(foto2);
@@ -157,10 +159,10 @@ export default function () {
         console.log('renderuje ProjectPage');
     })
 
-    const cv = document.getElementById('cv');
-    cv.addEventListener('click', () => {
-        CVPage();
-    })
+    // const cv = document.getElementById('cv');
+    // cv.addEventListener('click', () => {
+    //     CVPage();
+    // })
 
     const skillsButton = document.getElementById('skills');
     skillsButton.addEventListener('click', () => {

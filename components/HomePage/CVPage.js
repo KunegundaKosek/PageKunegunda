@@ -36,7 +36,7 @@ export default function () {
     content.appendChild(articleImage);
 
     const img = document.createElement('img');
-    img.className = 'content__article-img';
+    img.className = 'content__article-imgCV';
     img.setAttribute('src', "../../img/ja.jpg");
     img.setAttribute('alt', 'zdjęcie');
     articleImage.appendChild(img);

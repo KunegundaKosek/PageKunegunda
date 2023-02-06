@@ -4,7 +4,11 @@ ul {
 
 .content__article {
 
-
+    &-imgCV {
+        display: block;
+        width: 100%;
+        // height: 225px;
+    }
 
     &-text {
         display: block;

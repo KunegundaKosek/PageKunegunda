@@ -11,8 +11,8 @@ const content = document.querySelector('.content');
 
 
 // SkillsPage();
-// HomePage();
-CSSPage();
+HomePage();
+// CSSPage();
 // CVPage();
 
 const homeButton = document.getElementById('homeButton');

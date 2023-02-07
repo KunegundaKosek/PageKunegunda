@@ -41,7 +41,7 @@ export default function () {
     article1.appendChild(title1);
 
     const img1 = document.createElement('img');
-    img1.setAttribute('src', '../img/gif/gif1.gif');
+    img1.setAttribute('src', 'img/gif/gif1.gif');
     img1.setAttribute('alt', 'projekt 1');
     img1.className = 'content__box-image';
     article1.appendChild(img1);
@@ -69,7 +69,7 @@ export default function () {
     article2.appendChild(title2);
 
     const img2 = document.createElement('img');
-    img2.setAttribute('src', '../img/gif/gif2.gif');
+    img2.setAttribute('src', 'img/gif/gif2.gif');
     img2.setAttribute('alt', 'projekt 1');
     img2.className = 'content__box-image';
     article2.appendChild(img2);
@@ -98,7 +98,7 @@ export default function () {
     article3.appendChild(title3);
 
     const img3 = document.createElement('img');
-    img3.setAttribute('src', '../img/gif/gif3.gif');
+    img3.setAttribute('src', 'img/gif/gif3.gif');
     img3.setAttribute('alt', 'projekt 1');
     img3.className = 'content__box-image';
     article3.appendChild(img3);
@@ -126,7 +126,7 @@ export default function () {
     article4.appendChild(title4);
 
     const img4 = document.createElement('img');
-    img4.setAttribute('src', '../img/gif/gif4.gif');
+    img4.setAttribute('src', 'img/gif/gif4.gif');
     img4.setAttribute('alt', 'projekt 1');
     img4.className = 'content__box-image';
     article4.appendChild(img4);
@@ -154,7 +154,7 @@ export default function () {
     article5.appendChild(title5);
 
     const img5 = document.createElement('img');
-    img5.setAttribute('src', '../img/gif/gif5.gif');
+    img5.setAttribute('src', 'img/gif/gif5.gif');
     img5.setAttribute('alt', 'projekt 5');
     img5.className = 'content__box-image';
     article5.appendChild(img5);
@@ -182,7 +182,7 @@ export default function () {
     article6.appendChild(title6);
 
     const img6 = document.createElement('img');
-    img6.setAttribute('src', '../img/gif/gif6.gif');
+    img6.setAttribute('src', 'img/gif/gif6.gif');
     img6.setAttribute('alt', 'projekt 5');
     img6.className = 'content__box-image';
     article6.appendChild(img6);
@@ -380,7 +380,7 @@ export default function () {
     article13.appendChild(title13);
 
     const img13 = document.createElement('img');
-    img13.setAttribute('src', '../img/gif/gif13.gif');
+    img13.setAttribute('src', 'img/gif/gif13.gif');
     img13.setAttribute('alt', 'projekt 5');
     img13.className = 'content__box-image';
     article13.appendChild(img13);
@@ -405,7 +405,7 @@ export default function () {
 
     const title14 = document.createElement('span');
     title14.className = 'content__box-titleProject';
-    title14.textContent = 'Ruch myszką a ruch elementów';
+    title14.textContent = 'Pobieranie użytkowników';
     article14.appendChild(title14);
 
     const img14 = document.createElement('img');
@@ -422,7 +422,7 @@ export default function () {
     const a14 = document.createElement('a');
     a14.textContent = 'Zobacz projekt';
     a14.setAttribute('target', '_blank');
-    a14.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/HTML/Project18.html');
+    a14.setAttribute('href', 'https://kunegundakosek.github.io/PorjectsJavaScript/HTML/Project16.html');
     a14.className = 'content__box-btn';
     article14.appendChild(a14);
 

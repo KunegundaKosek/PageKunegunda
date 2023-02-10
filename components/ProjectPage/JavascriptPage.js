@@ -41,7 +41,7 @@ export default function () {
     article1.appendChild(title1);
 
     const img1 = document.createElement('img');
-    img1.setAttribute('src', 'img/gif/gif1.gif');
+    img1.setAttribute('src', 'img/GIF/gif1.gif');
     img1.setAttribute('alt', 'projekt 1');
     img1.className = 'content__box-image';
     article1.appendChild(img1);

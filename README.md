@@ -6,4 +6,4 @@ JavaScript, SCSS, CSS
 
 ### Wygląd
 Na stronie dostępne są dwa motywy: jasny i ciemny.
-(img/Page.png)
+![image](img/Page.png)

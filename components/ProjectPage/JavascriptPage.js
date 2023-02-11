@@ -1,3 +1,4 @@
+import AnimationProjects from "./AnimationProjects.js";
 import button from "./button.js";
 import ProjectPage from "./ProjectPage.js";
 
@@ -26,8 +27,17 @@ export default function () {
 
     const h1 = document.createElement('h1');
     h1.className = 'content__title';
-    h1.textContent = 'Projekty JavaScript';
+    h1.id = 'titleJS';
     content.appendChild(h1);
+
+    AnimationProjects();
+
+    const btn = document.createElement('a');
+    btn.href = 'https://github.com/KunegundaKosek/PorjectsJavaScript'; 
+    btn.target = '_blank';
+    btn.textContent = 'Zobacz kod poniższych projektów na GitHubie';
+    content.appendChild(btn);
+
 
     // Projekt 1;
 

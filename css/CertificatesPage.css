@@ -1,0 +1,40 @@
+li {
+  text-align: center;
+}
+li img {
+  width: 70%;
+}
+li h2 {
+  padding: 50px 0 20px 0;
+}
+li p {
+  padding: 30px 0;
+}
+li hr {
+  margin-top: 20px;
+}
+li .LICertificateButton {
+  display: block;
+  border: 3px solid magenta;
+  background-color: pink;
+  width: 30%;
+  padding: 20px 30px;
+  margin: 20px auto;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+li .LICertificateButton:hover {
+  background-color: rgb(252, 155, 171);
+}
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  li .LICertificateButton {
+    border: none;
+    background-color: inherit;
+    width: 100%;
+    padding: 15px 0;
+  }
+  li .LICertificateButton:hover {
+    background-color: inherit;
+  }
+}/*# sourceMappingURL=CertificatesPage.css.map */

@@ -267,15 +267,16 @@ li .LICertificateButton:hover {
 
 html {
   font-size: 10px;
-  background-color: pink;
+  background-color: rgb(71, 32, 39);
   font-family: "Roboto", sans-serif;
+  color: white;
 }
 
 .wrapper {
   display: flex;
   flex-wrap: wrap;
   font-size: 3rem;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.593);
   box-shadow: 0 0 20px 0 black;
   min-height: 100vh;
   max-width: 1000px;
@@ -291,6 +292,11 @@ html {
   width: 100%;
   display: block;
 }
+@media (max-width: 800px) {
+  .logo {
+    display: none;
+  }
+}
 
 .search {
   flex-grow: 1;
@@ -301,8 +307,7 @@ html {
 }
 @media (max-width: 799px) {
   .search {
-    flex-basis: 100%;
-    order: -1;
+    display: none;
   }
 }
 .search__input {
@@ -323,7 +328,7 @@ html {
   padding: 0 10px;
   max-height: 60px;
   border: 2px solid black;
-  background-color: white;
+  background-color: rgb(168, 144, 163);
   text-transform: uppercase;
   letter-spacing: 2px;
   cursor: pointer;
@@ -343,8 +348,9 @@ html {
 }
 @media (max-width: 799px) {
   .settings {
-    flex-grow: 1;
-    justify-content: flex-end;
+    justify-content: center;
+    margin: auto;
+    padding: 30px 20px;
   }
 }
 .settings:hover {
@@ -411,7 +417,7 @@ html {
 .content {
   display: flex;
   flex-basis: 100%;
-  background-color: rgb(246, 210, 216);
+  background-color: rgb(71, 32, 39);
 }
 .content__title {
   max-height: 86px;
@@ -421,9 +427,13 @@ html {
     font-size: 40px;
   }
 }
+.content__project {
+  color: white;
+}
 @media (max-width: 800px) {
   .content img {
     width: 60%;
+    margin: auto;
   }
 }
 
@@ -478,4 +488,4 @@ html {
 
 .label .fa-sun {
   color: yellow;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=DarkStyle.css.map */

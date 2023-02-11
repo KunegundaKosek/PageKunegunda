@@ -3,8 +3,6 @@ import JavascriptPage from "./JavascriptPage.js";
 
 export default function () {
 
-
-
     const content = document.querySelector('.content');
     content.innerHTML = '';
     content.style.display = 'block';
@@ -12,6 +10,9 @@ export default function () {
 
     const homeButton = document.getElementById('homeButton');
     homeButton.style.color = 'white';
+
+    const certificatesButton = document.getElementById('certificatesButton');
+    certificatesButton.style.color = 'white';
 
     const h1 = document.createElement('h1');
     h1.className = 'content__title';
@@ -29,7 +30,7 @@ export default function () {
     const titleTypeScript = document.createElement('p');
     titleTypeScript.className = 'content__project content__ts';
     titleTypeScript.id = 'typescript';
-    titleTypeScript.textContent = 'Projekty TypeScript';
+    titleTypeScript.textContent = 'Projekty TypeScript <--- w budowie';
     content.appendChild(titleTypeScript);
 
     // CSS
@@ -50,7 +51,7 @@ export default function () {
     const titlejQuery = document.createElement('p');
     titlejQuery.className = 'content__project content__jquery';
     titlejQuery.id = 'jquery';
-    titlejQuery.textContent = 'Projekty jQuery';
+    titlejQuery.textContent = 'Projekty jQuery <--- w budowie';
     content.appendChild(titlejQuery);
 
     button();

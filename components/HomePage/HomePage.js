@@ -1,4 +1,5 @@
 import Build from "../Build.js";
+import CertificatesPage from "../Certificates/CertificatesPage.js";
 import ProjectPage from "../ProjectPage/ProjectPage.js";
 import Animation from "./Animation.js";
 import CVPage from "./CVPage.js";
@@ -24,6 +25,10 @@ export default function () {
     h1.className = 'content__title';
     h1.id = 'h1';
     content.appendChild(h1);
+
+
+    const homeButton = document.getElementById('homeButton');
+    homeButton.style.color = 'crimson';
 
 
     // Artykuł 1 po lewo {ludzik}
@@ -108,7 +113,7 @@ export default function () {
 
     const description3 = document.createElement('p');
     description3.className = 'content__article-description';
-    description3.textContent = 'Aplikacja zbudowana w bibliotece React. ';
+    description3.textContent = 'Aplikacja zbudowana w bibliotece React. Na stronie można wybrać kartę Pokemon i dodać ją do koszyka.';
     article3.appendChild(description3);
 
     const button3 = document.createElement('a');
@@ -119,41 +124,44 @@ export default function () {
     button3.textContent = 'Zobacz';
     article3.appendChild(button3);
 
+
+    // CLICKER artykuł 4
+
+    const article4 = document.createElement('article');
+    article4.className = 'content__article';
+    content.appendChild(article4);
+
+    const foto4 = document.createElement('img');
+    foto4.setAttribute('src', 'https://images.crazygames.com/donut-clicker/20230119162541/donut-clicker-cover?auto=format%2Ccompress&q=45&cs=strip&ch=DPR&fit=crop');
+    foto4.setAttribute('alt', 'pokedex');
+    foto4.setAttribute('class', 'content__article-img');
+    article4.appendChild(foto4);
+
+    const title4 = document.createElement('h4');
+    title4.className = 'content__article-title';
+    title4.textContent = 'APLIKACJA CLICKER';
+    article4.appendChild(title4);
+
+    const description4 = document.createElement('p');
+    description4.className = 'content__article-description';
+    description4.textContent = 'Na stronie mamy różne pola, które dodają lub odejmują wskazaną liczbę. Można także dodać własną liczbę, która ma zostać dodana.';
+    article4.appendChild(description4);
+
+    const button4 = document.createElement('a');
+    button4.setAttribute('href', "https://kunegundakosek.github.io/Clicker/");
+    button4.setAttribute('target', '_blank');
+    button4.className = 'content__article-button';
+    button4.id = 'pokedex';
+    button4.textContent = 'Zobacz';
+    article4.appendChild(button4);
+
     const buttonPokedex = document.createElement('a');
     buttonPokedex.setAttribute('href', "https://kunegundakosek.github.io/ReactPokedex/");
     button3.appendChild(buttonPokedex);
 
-    // //artykuł 4
 
-    // const article4 = document.createElement('article');
-    // article4.className = 'content__article-more';
-    // content.appendChild(article4);
-
-    // const foto4 = document.createElement('img');
-    // foto4.setAttribute('src', '../../img/shop.jpg');
-    // foto4.setAttribute('alt', 'zdjecie misia');
-    // foto4.setAttribute('class', 'content__article-img');
-    // article4.appendChild(foto4);
-
-    // const title4 = document.createElement('h3');
-    // title4.className = 'content__article-title';
-    // title4.textContent = 'Sklep z ubraniami';
-    // article4.appendChild(title4);
-
-    // const description4 = document.createElement('p');
-    // description4.className = 'content__article-description';
-    // description4.textContent = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum exercitationem soluta dolorem error cumque odit praesentium ullam eos eligendi, enim voluptate assumenda delectus omnis itaque ut dolor quae. Mollitia, omnis.';
-    // article4.appendChild(description4);
-
-    // const button4 = document.createElement('button');
-    // button4.className = 'content__article-button';
-    // button4.id = 'shop';
-    // button4.textContent = 'Czytaj dalej';
-    // article4.appendChild(button4);
-
-
-    // ---------------------
-
+    const btnCert = document.getElementById('certificatesButton');
+    btnCert.style.color = 'white';
 
     const projectButton = document.getElementById('projectButton');
     projectButton.style.color = "white";
@@ -173,9 +181,11 @@ export default function () {
         SkillsPage();
     })
 
-    const contactButton = document.getElementById('contactButton').addEventListener('click', () => {
-        
-    });
+    const certificatesButton = document.getElementById('certificatesButton');
+    certificatesButton.addEventListener('click', () => {
+        CertificatesPage();
+    })
+
 
     // const shop = document.getElementById('shop');
     // shop.addEventListener('click', () => {

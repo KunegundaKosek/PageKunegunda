@@ -1,4 +1,5 @@
 import button from "./button.js";
+import CSSAnimation from "./CSSAnimation.js";
 import ProjectPage from "./ProjectPage.js";
 
 export default function () {
@@ -26,8 +27,11 @@ export default function () {
 
     const h1 = document.createElement('h1');
     h1.className = 'content__title';
-    h1.textContent = 'Projekty CSS';
+    h1.id = 'titleCSS';
     content.appendChild(h1);
+
+    CSSAnimation();
+        
 
     // Projekt 1;
 

@@ -12,4 +12,8 @@ JavaScript, SCSS, CSS
 ### Wygląd
 
 Na stronie dostępne są dwa motywy: jasny i ciemny.
-![image](img/page.gif);
+![image](img/page.gif)
+![image](img/Page.png)
+![image](img/darkPage.gif)
+
+

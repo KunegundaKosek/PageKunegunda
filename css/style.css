@@ -291,6 +291,11 @@ html {
   width: 100%;
   display: block;
 }
+@media (max-width: 800px) {
+  .logo {
+    display: none;
+  }
+}
 
 .search {
   flex-grow: 1;
@@ -301,8 +306,7 @@ html {
 }
 @media (max-width: 799px) {
   .search {
-    flex-basis: 100%;
-    order: -1;
+    display: none;
   }
 }
 .search__input {
@@ -343,8 +347,9 @@ html {
 }
 @media (max-width: 799px) {
   .settings {
-    flex-grow: 1;
-    justify-content: flex-end;
+    justify-content: center;
+    margin: auto;
+    padding: 30px 20px;
   }
 }
 .settings:hover {
@@ -419,11 +424,23 @@ html {
 @media (max-width: 1000px) {
   .content__title {
     font-size: 40px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .content__project {
+    font-size: 25px;
+  }
+}
+@media (max-width: 800px) {
+  .content__article-title {
+    font-size: 25px;
   }
 }
 @media (max-width: 800px) {
   .content img {
     width: 60%;
+    margin: auto;
   }
 }
 
@@ -433,6 +450,7 @@ html {
   color: white;
   text-align: center;
   padding: 20px 0;
+  font-size: 1.5rem;
 }
 
 .checkbox {

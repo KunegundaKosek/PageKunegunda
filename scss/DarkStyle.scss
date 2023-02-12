@@ -110,20 +110,15 @@ html {
     cursor: pointer;
 
     @media (max-width: 799px) {
-        // flex-grow: 1;
         justify-content: center;
         margin: auto;
         padding: 30px 20px;
-
     }
-
 
     &:hover {
         transition: 0.5s;
         color: black;
     }
-
-
 }
 
 
@@ -205,11 +200,24 @@ html {
 
         @media (max-width: 1000px) {
             font-size: 40px;
+            font-size: 20px;
         }
     }
 
     &__project {
         color: white;
+    }
+
+    &__project {
+        @media (max-width: 800px) {
+            font-size: 25px;
+        }
+    }
+
+    &__article-title {
+        @media (max-width: 800px) {
+            font-size: 25px;
+        }
     }
 
     @media (max-width: 800px) {
@@ -219,11 +227,6 @@ html {
         }
     }
 
-    // a {
-    //     padding: 30px;
-    //     color: magenta;
-    // }
-
 }
 
 .footer {
@@ -232,6 +235,7 @@ html {
     color: white;
     text-align: center;
     padding: 20px 0;
+    font-size: 1.5rem;
 }
 
 .checkbox {
